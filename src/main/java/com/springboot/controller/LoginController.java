@@ -33,13 +33,10 @@ public class LoginController {
 	@RequestMapping("/validate")
 	public String validateUser(@RequestParam("username") String username, @RequestParam("password") String password,
 			Model model, HttpSession session) throws NoSuchAlgorithmException {
-
 		UserDetails userDetails = this.userService.getUserByUsernameAndPassword(username,
 				userService.encyptString(password));
 		session.setAttribute(WebappConstant.USER, userDetails);
-
 		return WebappConstant.REDIRECTBOOKLIST;
 
 	}
-
 }
