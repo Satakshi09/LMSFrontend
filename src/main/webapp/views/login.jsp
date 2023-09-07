@@ -89,7 +89,5 @@ background: radial-gradient(to bottom right, rgba(238, 113, 228, 1.0), rgba(34, 
 			</div>
 		</div>
 	</div>
-
-
 </body>
 </html>
